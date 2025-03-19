@@ -1,0 +1,14 @@
+Tags, Attributes, and Content
+
+Tags - <> (angle brackets)
+Opening tag: <tagname>
+Closing tag: </tagname>
+
+<p>this is paragraph</p>
+
+Attributes - Characteristics/Provide information about an element
+        - Come inside the opening tag
+        
+<p name="value"></p>
+
+<p id="'p_one"></p>

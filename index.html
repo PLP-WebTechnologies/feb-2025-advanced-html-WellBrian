@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists, Images, Tables & Forms</title>
+</head>
+<body>
+    <h2>HTML Lists</h2>
+    <h3>Ordered Lists</h3>
+    <ol type="a" start="1"> <!--Has only 2 attributes; type and start-->
+        <li>Alvin Mwangi</li>
+        <li>Lilian Mumbe</li>
+        <li>Simon Mbugua</li>
+        <li>Neyvies Ngaruiya</li>
+        <li>Golden Sibanyoni</li>
+    </ol>
+    <h3>Un-ordered Lists</h3>
+    <ul type="circle"> <!--Has only 1 attribute-->
+        <li>Alvin Mwangi</li>
+        <li>Lilian Mumbe</li>
+        <li>Simon Mbugua</li>
+        <li>Neyvies Ngaruiya</li>
+        <li>Golden Sibanyoni</li>
+    </ul>
+    <h3>Definition Lists</h3>
+    <dl> <!--Definition List-->
+        <dt>FBI</dt> <!--Definition Term-->
+        <dd>Federal Bureau of Investigations</dd> <!--Definition Description-->
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>SQL</dt>
+        <dd>Structured Query Language</dd>
+    </dl>
+    <h2>Images</h2>
+    <h3>Internal Images</h3>
+    <img src="fill.jpg" alt="Image of Nation paper" height="500" width="400">
+    <h3>External Images</h3>
+    <img src="https://images.pexels.com/photos/31018099/pexels-photo-31018099/free-photo-of-yellow-daffodils-in-mesh-bag-on-wooden-chair.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" 
+        alt="Image of flower in a bag" height="500" width="400">
+    <h2>HTML Tables</h2>
+    <table border="1">
+        <thead>
+            <tr> <!--Table row-->
+                <th>Student Name</th> <!--Table header Columns-->
+                <th>Age</th>
+                <th>Country</th>
+            </tr>
+        </thead> <!--Top part of the table (Column headers)-->
+        <tbody></tbody> <!--Actual content of the table-->
+            <tr>
+                <td>Eddy</td> <!--Table Data-->
+                <td>25</td>
+                <td>Kenya</td>
+            </tr>
+            <tr>
+                <td>Brian</td> <!--Table Data-->
+                <td>22</td>
+                <td>Nigeria</td>
+            </tr>
+            <tr>
+                <td>Linda</td> <!--Table Data-->
+                <td>27</td>
+                <td>Kenya</td>
+            </tr>
+            <tr>
+                <td>Moses</td> <!--Table Data-->
+                <td>31</td>
+                <td>South Africa</td>
+            </tr>
+            <tr>
+                <td>Mike</td> <!--Table Data-->
+                <td>22</td>
+                <td>Mali</td>
+            </tr>
+        <tfoot> <!--Optional/ similar as <thead> but appears at the bottom-->
+            <tr> <!--Table row-->
+                <th>Student Name</th> <!--Table header Columns-->
+                <th>Age</th>
+                <th>Country</th>
+            </tr>
+        </tfoot> 
+    </table>
+    <h2>HTML Forms</h2>
+    <form action="" method="">
+        <label for="full_name">Full Name</label>
+        <Input type="text" id="full_name" name="full_name" required placeholder="Your full name">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="youremail@example.com">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required placeholder="Your Address">
+        <br><br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="male"> male
+        <input type="radio" name="gender" value="female"> female
+        <br><br>
+        <label for="hobby">Hobbies</label> 
+        <input type="checkbox" name="hobby" value="travel"> Travel
+        <input type="checkbox" name="hobby" value="music"> Music
+        <input type="checkbox" name="hobby" value="reading"> reading
+        <input type="checkbox" name="hobby" value="swimming"> Swimming
+        <br><br>
+        <label>Country</label>
+        <select name="country" id="country">
+            <option>--Select Country--</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Tanzania">Tanzania</option>
+        </select>
+        <br><br>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+        </fieldset>
+        <br><br>
+        <button type="submit">Submit</button>
+        <input type="reset" value="Cancel/Reset">
+    </form>
+    <audio controls> <!--Has 3 key attributes; controls: Display playback options (play, pause)
+        autoplay: starts audio automatically
+        loop: repeats the audio-->
+        <source src="Alikiba - Mahaba (Prod. Yogo Beat).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <video controls width="640" height="360">
+        <source src="Abigail Chams, Harmonize - Me too (Official Music Video).mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+</body>
+</html>
